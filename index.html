@@ -3,25 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of Black House Devs" />
     <title>Black House Devs | Portfolio</title>
   </head>
   <body>
     <!-- HEADER -->
     <header>
       <h1>Black House Devs</h1>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <!-- MAIN -->
     <main>
       <!-- HERO SECTION -->
       <section id="hero">
-        <img src="./bhd-logo-final.png" alt="BHD Logo" width="300" />
+        <h2>Welcome to Black House Devs</h2>
+        <img
+          src="./bhd-logo-final.png"
+          alt="Black House Devs company logo"
+          width="300"
+        />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
           molestias repudiandae, ab numquam recusandae omnis?
@@ -59,20 +67,26 @@
         <h2>Projects</h2>
         <ol>
           <li>
-            <strong>Project One:</strong> A web application that allows users to
-            track their tasks and manage their time effectively.
+            <article>
+              <strong>Project One:</strong> A web application that allows users
+              to track their tasks and manage their time effectively.
+            </article>
           </li>
           <li>
-            <strong>Project Two:</strong> An e-commerce platform that provides a
-            seamless shopping experience with secure payment options.
+            <article>
+              <strong>Project Two:</strong> An e-commerce platform that provides
+              a seamless shopping experience with secure payment options.
+            </article>
           </li>
           <li>
-            <strong>Project Three:</strong> A social media app that connects
-            people with similar interests and allows them to share content.
+            <article>
+              <strong>Project Three:</strong> A social media app that connects
+              people with similar interests and allows them to share content.
+            </article>
           </li>
         </ol>
       </section>
-      <!-- CONTACY SECTION -->
+      <!-- CONTACT SECTION -->
       <section id="contact">
         <h2>Contact</h2>
         <form action="#" method="post">
@@ -80,23 +94,11 @@
             <legend>Get In Touch</legend>
             <div>
               <label for="name">Name:</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                required
-                aria-required="true"
-              />
+              <input type="text" id="name" name="name" required />
             </div>
             <div>
               <label for="email">Email:</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                aria-required="true"
-              />
+              <input type="email" id="email" name="email" required />
             </div>
             <div>
               <label for="message">Message:</label>
@@ -104,8 +106,8 @@
                 id="message"
                 name="message"
                 required
-                aria-required="true"
                 aria-describedby="message-help"
+                minlength="10"
               ></textarea>
               <p id="message-help">
                 Write your message here. Minimum of 10 characters recommended.
@@ -116,5 +118,9 @@
         </form>
       </section>
     </main>
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; 2025 Black House Devs. All rights reserved.</p>
+    </footer>
   </body>
 </html>
